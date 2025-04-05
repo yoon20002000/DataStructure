@@ -19,6 +19,17 @@ DT_Stack::DT_Stack(const DT_Stack& other)
     std::copy(other.data, other.data + size, data);
 }
 
+DT_Stack::DT_Stack(DT_Stack&& other) noexcept
+{
+    size = other.size;
+    capacity = other.capacity;
+    data = other.data;
+
+    other.data = nullptr;
+    other.size = 0;
+    other.capacity = 0;
+}
+
 DT_Stack::~DT_Stack()
 {
     delete[] data;
@@ -29,8 +40,26 @@ DT_Stack& DT_Stack::operator=(const DT_Stack& other)
     if (this != &other)
     {
         delete[] data;
+        
         reserve(other.capacity);
+        size = other.size;
         std::copy(other.data, other.data + size, data);
+    }
+    return *this;
+}
+
+DT_Stack& DT_Stack::operator=(DT_Stack&& other) noexcept
+{
+    if (other.data != nullptr)
+    {
+        delete[] data;
+        size = other.size;
+        capacity = other.capacity;
+        data = other.data;
+        
+        other.data = nullptr;
+        other.size = 0;
+        other.capacity = 0;
     }
     return *this;
 }
@@ -47,7 +76,7 @@ void DT_Stack::push(int inData)
 
         reserve(newCapacity);
     }
-    
+
     data[size] = inData;
     size += 1;
 }
@@ -85,14 +114,14 @@ void DT_Stack::reserve(int newCapacity)
         return;
     }
     capacity = newCapacity;
-    
+
     int* newData = new int[newCapacity];
-    
+
     for (int i = 0; i < size; ++i)
     {
         newData[i] = data[i];
     }
-    
+
     delete[] data;
     data = newData;
 }

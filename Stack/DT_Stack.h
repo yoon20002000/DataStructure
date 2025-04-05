@@ -6,9 +6,11 @@ public:
     DT_Stack();
     DT_Stack(int capacity);
     DT_Stack(const DT_Stack& other);
+    DT_Stack(DT_Stack&& other) noexcept;
     ~DT_Stack();
 
     DT_Stack& operator=(const DT_Stack& other);
+    DT_Stack& operator=(DT_Stack&& other) noexcept;
     
     void push(int inData);
     int pop();
