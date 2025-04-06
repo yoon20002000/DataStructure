@@ -9,7 +9,7 @@ public:
     {
         
     }
-    LLStackNode(int data, LLStackNode* prev) : data(data), prev(prev)
+    LLStackNode(T data, LLStackNode* prev) : data(data), prev(prev)
     {
         
     }
@@ -53,24 +53,28 @@ public:
         return *this;
     }
 
+    bool isEmpty() const
+    {
+        return top == nullptr;
+    }
     void push(T data)
     {
         top = new LLStackNode<T>(data, top);
     }
-    int pop()
+    T pop()
     {
         if (top == nullptr)
         {
             return -1;
         }
 
-        int returnValue = top->data;
+        T returnValue = top->data;
         LLStackNode<T>* nextTop = top->prev;
         delete top;
         top = nextTop;
         return returnValue;
     }
-    int peek() const
+    T peek() const
     {
         return top == nullptr ? -1 : top->data;
     }
