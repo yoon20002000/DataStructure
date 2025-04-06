@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+#include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
 #include "Stack/DT_LLStack.h"
 #include "Stack/DT_Stack.h"
@@ -125,8 +126,33 @@ void llsSymbolCheck()
     }
 }
 
+void postfix()
+{
+    std::vector<std::string> infixExpressions = {
+        "A+B",
+        "A+B*C",
+        "(A+B)*C",
+        "A*B+C",
+        "A*(B+C)",
+        "A+(B*C)",
+        "(A+B)*(C+D)",
+        "A+B+C+D",
+        "A*(B+C*(D+E))",
+        "((A+B)*C)-(D-E)",
+        "A+B*C-D/E",
+        "((A*B)-(C/D))",
+    };
+
+    DTA_ChangePostfix changePostfix;
+    
+    for (const std::string& expr : infixExpressions)
+    {
+        changePostfix.solve(expr);
+    }
+}
+
 int main(int argc, char* argv[])
 {
-    llsSymbolCheck();
+    postfix();
     return 0;
 }
