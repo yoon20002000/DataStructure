@@ -58,3 +58,5 @@ DataStructure/x64/Debug/DataStructure.tlog/Cl.items.tlog
 DataStructure/x64/Debug/DataStructure.tlog/CL.command.1.tlog
 DataStructure/x64/Debug/DataStructure.ilk
 DataStructure/x64/Debug/DataStructure.exe.recipe
+DataStructure.vcxproj
+x64/Debug/DataStructure.pdb
