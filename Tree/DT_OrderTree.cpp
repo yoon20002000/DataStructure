@@ -13,6 +13,7 @@ TreeNode::TreeNode(char inData, TreeNode* inLeft, TreeNode* inRight) : data(inDa
 
 TreeNode::~TreeNode()
 {
+    std::cout << "delete call : data : " << data << '\n';
     delete left;
     delete right;
 }
@@ -45,6 +46,8 @@ void DT_OrderTree::solve()
 
     std::cout<< "\n후위 "<<'\n';
     postOrder(n1);
+
+    delete n1;
 }
 
 void DT_OrderTree::preOrder(TreeNode* root)
