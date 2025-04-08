@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "Queue/DT_CycleQueue.h"
+#include "Sort/SelectSort/DT_SelectSort.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
 #include "Stack/DTA_CalcPostfix.h"
@@ -204,9 +205,8 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_BinarySearchTree tree;
-
-    tree.solve();
+    DT_SelectSort sort;
+    sort.sort();
     
     return 0;
 }
