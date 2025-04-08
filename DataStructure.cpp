@@ -1,10 +1,13 @@
 #include <iostream>
 #include <vector>
 
+#include "Queue/DT_CycleQueue.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
+#include "Stack/DTA_CalcPostfix.h"
 #include "Stack/DT_LLStack.h"
 #include "Stack/DT_Stack.h"
+#include "Tree/DT_OrderTree.h"
 
 void normalStack()
 {
@@ -151,8 +154,61 @@ void postfix()
     }
 }
 
+void postfixCalc()
+{
+    struct TestCase {
+        std::string expression;
+        int expected;
+    };
+
+    std::vector<TestCase> testCases = {
+        {"34+", 7},       // 3 + 4
+        {"52-", 3},       // 5 - 2
+        {"23*", 6},       // 2 * 3
+        {"84/", 2},       // 8 / 4
+        {"34+2*", 14},    // (3 + 4) * 2
+        {"93-2/", 3},     // (9 - 3) / 2
+        {"52+83-*", 35},  // (5 + 2) * (8 - 3)
+        {"93*42/+1-", 28}  // (9 * 3) + (4 / 2) - 1
+    };
+
+    DTA_CalcPostfix calc_postfix;
+    for (const TestCase& expr : testCases)
+    {
+        int result = calc_postfix.result(expr.expression);
+        if (result == expr.expected)
+        {
+            std::cout << "정답 !! " << result << '\n';
+        }
+        else
+        {
+            std::cout << "오답 !! " << "내 답 : "<<result << " // " << "정답 : " << expr.expected << '\n';
+        }
+    }
+}
+void cycleQueue()
+{
+    DT_CycleQueue cycleQueue;
+    
+    for (int i = 0 ; i < 10;++i)
+    {
+        cycleQueue.enQueue(i);
+    }
+
+    std::cout<< cycleQueue.deQueue() << '\n';
+    std::cout<< cycleQueue.deQueue() << '\n';
+    cycleQueue.printQueue();
+}
+
+void orderTree()
+{
+    DT_OrderTree orderTree;
+    orderTree.solve();
+}
+
 int main(int argc, char* argv[])
 {
-    postfix();
+    
+    orderTree();
     return 0;
 }
