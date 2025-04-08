@@ -7,6 +7,7 @@
 #include "Stack/DTA_CalcPostfix.h"
 #include "Stack/DT_LLStack.h"
 #include "Stack/DT_Stack.h"
+#include "Tree/DT_BinarySearchTree.h"
 #include "Tree/DT_CalcFolderSize.h"
 #include "Tree/DT_OrderTree.h"
 
@@ -203,8 +204,9 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_CalcFolderSize calcFolderSize;
-    calcFolderSize.solve();
+    DT_BinarySearchTree tree;
+
+    tree.solve();
     
     return 0;
 }
