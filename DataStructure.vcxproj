@@ -155,10 +155,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure.cpp" />
+    <ClCompile Include="Heap\DT_Heap.cpp" />
+    <ClCompile Include="Queue\DT_CycleQueue.cpp" />
+    <ClCompile Include="Queue\DT_LinearQueue.cpp" />
+    <ClCompile Include="Queue\DT_SLLQueue.cpp" />
+    <ClCompile Include="Sort\SelectSort\DT_SelectSort.cpp" />
+    <ClCompile Include="Stack\DTA_ChangePostfix.cpp" />
+    <ClCompile Include="Stack\DTA_CheckSymbolPair.cpp" />
+    <ClCompile Include="Stack\DTA_CalcPostfix.cpp" />
+    <ClCompile Include="Stack\DT_LLStack.cpp" />
     <ClCompile Include="Stack\DT_Stack.cpp" />
+    <ClCompile Include="Tree\DT_BinarySearchTree.cpp" />
+    <ClCompile Include="Tree\DT_CalcFolderSize.cpp" />
+    <ClCompile Include="Tree\DT_OrderTree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Heap\DT_Heap.h" />
+    <ClInclude Include="Queue\DT_CycleQueue.h" />
+    <ClInclude Include="Queue\DT_LinearQueue.h" />
+    <ClInclude Include="Queue\DT_SLLQueue.h" />
+    <ClInclude Include="Sort\SelectSort\DT_SelectSort.h" />
+    <ClInclude Include="Stack\DTA_ChangePostfix.h" />
+    <ClInclude Include="Stack\DTA_CheckSymbolPair.h" />
+    <ClInclude Include="Stack\DTA_CalcPostfix.h" />
+    <ClInclude Include="Stack\DT_LLStack.h" />
     <ClInclude Include="Stack\DT_Stack.h" />
+    <ClInclude Include="Tree\DT_BinarySearchTree.h" />
+    <ClInclude Include="Tree\DT_CalcFolderSize.h" />
+    <ClInclude Include="Tree\DT_OrderTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
