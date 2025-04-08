@@ -7,6 +7,7 @@
 #include "Stack/DTA_CalcPostfix.h"
 #include "Stack/DT_LLStack.h"
 #include "Stack/DT_Stack.h"
+#include "Tree/DT_CalcFolderSize.h"
 #include "Tree/DT_OrderTree.h"
 
 void normalStack()
@@ -200,15 +201,10 @@ void cycleQueue()
     cycleQueue.printQueue();
 }
 
-void orderTree()
-{
-    DT_OrderTree orderTree;
-    orderTree.solve();
-}
-
 int main(int argc, char* argv[])
 {
+    DT_CalcFolderSize calcFolderSize;
+    calcFolderSize.solve();
     
-    orderTree();
     return 0;
 }
