@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "Queue/DT_CycleQueue.h"
+#include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/SelectSort/DT_SelectSort.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
@@ -205,8 +206,8 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_SelectSort sort;
-    sort.sort();
+    DT_BubbleSort sort;
+    sort.solve();
     
     return 0;
 }
