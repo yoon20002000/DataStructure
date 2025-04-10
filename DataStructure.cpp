@@ -4,6 +4,7 @@
 #include "Queue/DT_CycleQueue.h"
 #include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/InsertionSort/DT_InsertionSort.h"
+#include "Sort/MergeSort/DT_MergeSort.h"
 #include "Sort/QuickSort/DT_Quick.h"
 #include "Sort/SelectSort/DT_SelectSort.h"
 #include "Stack/DTA_ChangePostfix.h"
@@ -208,8 +209,8 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_InsertionSort insertionSort;
-    insertionSort.solve();
+    DT_MergeSort mergeSort;
+    mergeSort.solve();
     
     return 0;
 }
