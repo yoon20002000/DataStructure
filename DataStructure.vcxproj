@@ -160,6 +160,7 @@
     <ClCompile Include="Queue\DT_LinearQueue.cpp" />
     <ClCompile Include="Queue\DT_SLLQueue.cpp" />
     <ClCompile Include="Sort\BubleSort\DT_BubbleSort.cpp" />
+    <ClCompile Include="Sort\InsertionSort\DT_InsertionSort.cpp" />
     <ClCompile Include="Sort\QuickSort\DT_Quick.cpp" />
     <ClCompile Include="Sort\SelectSort\DT_SelectSort.cpp" />
     <ClCompile Include="Stack\DTA_ChangePostfix.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="Queue\DT_LinearQueue.h" />
     <ClInclude Include="Queue\DT_SLLQueue.h" />
     <ClInclude Include="Sort\BubleSort\DT_BubbleSort.h" />
+    <ClInclude Include="Sort\InsertionSort\DT_InsertionSort.h" />
     <ClInclude Include="Sort\QuickSort\DT_Quick.h" />
     <ClInclude Include="Sort\SelectSort\DT_SelectSort.h" />
     <ClInclude Include="Stack\DTA_ChangePostfix.h" />
