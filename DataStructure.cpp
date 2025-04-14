@@ -209,8 +209,7 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_MergeSort mergeSort;
-    mergeSort.solve();
-    
+    DT_Quick quick;
+    quick.solve();
     return 0;
 }

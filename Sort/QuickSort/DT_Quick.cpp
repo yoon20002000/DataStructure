@@ -14,7 +14,8 @@ void DT_Quick::sort(int* inDatas, int left, int right)
 {
     if (left < right)
     {
-        int pivot = partition(inDatas, left, right);
+        //int pivot = partition(inDatas, left, right);
+        int pivot = partition2(inDatas, left, right);
         sort(inDatas, left, pivot - 1);
         sort(inDatas, pivot + 1, right);
     }
@@ -22,33 +23,55 @@ void DT_Quick::sort(int* inDatas, int left, int right)
 
 int DT_Quick::partition(int* inDatas, int left, int right)
 {
-    int pivotIndex = (right + left) / 2;
-    int pivotItem = inDatas[pivotIndex];
+    int pivot = (left + right) / 2;
+    int pivotItem = inDatas[pivot];
+    int l = left;
+    int r = right;
 
-    while (left < right)
+    while (l < r)
     {
-        while (left < right && inDatas[left] <= pivotItem)
+        while (inDatas[l] < pivotItem && l < r)
         {
-            left++;
+            l++;
         }
-        while (left < right && inDatas[right] >= pivotItem)
+        while (inDatas[r] >= pivotItem && l < r)
         {
-            right--;
+            r--;
         }
-        if (left <= right)
+
+        if (l < r)
         {
-            std::swap(inDatas[left], inDatas[right]);
+            std::swap(inDatas[l], inDatas[r]);
         }
     }
-    std::swap(inDatas[pivotIndex], inDatas[right]);
 
-    return right;
+    std::swap(inDatas[pivot], inDatas[r]);
+
+    return r;
+}
+
+int DT_Quick::partition2(int* inDatas, int left, int right)
+{
+    int pivot = left;
+    int pivotItem = inDatas[pivot];
+
+    for (int i = left + 1; i <= right; ++i)
+    {
+        if (inDatas[i] < pivotItem)
+        {
+            pivot++;
+            std::swap(inDatas[i], inDatas[pivot]);
+        }
+    }
+
+    std::swap(inDatas[pivot], inDatas[left]);
+    return pivot;
 }
 
 void DT_Quick::print(int* inDatas, int size)
 {
-    for (int i = 0 ; i < size; ++i)
+    for (int i = 0; i < size; ++i)
     {
-        std::cout << inDatas[i] << " ";    
+        std::cout << inDatas[i] << " ";
     }
 }
