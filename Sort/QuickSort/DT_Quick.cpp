@@ -25,29 +25,26 @@ int DT_Quick::partition(int* inDatas, int left, int right)
 {
     int pivot = (left + right) / 2;
     int pivotItem = inDatas[pivot];
-    int l = left;
-    int r = right;
-
-    while (l < r)
+    while (left < right)
     {
-        while (inDatas[l] < pivotItem && l < r)
+        while (inDatas[left] < pivotItem && left < right)
         {
-            l++;
+            left++;
         }
-        while (inDatas[r] >= pivotItem && l < r)
+        while (inDatas[right] >= pivotItem && left < right)
         {
-            r--;
+            right--;
         }
 
-        if (l < r)
+        if (left < right)
         {
-            std::swap(inDatas[l], inDatas[r]);
+            std::swap(inDatas[left], inDatas[right]);
         }
     }
 
-    std::swap(inDatas[pivot], inDatas[r]);
+    std::swap(inDatas[pivot], inDatas[right]);
 
-    return r;
+    return right;
 }
 
 int DT_Quick::partition2(int* inDatas, int left, int right)
