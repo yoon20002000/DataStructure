@@ -29,4 +29,5 @@ private:
 
     void heapifyUp(int i);
     void heapifyDown(int i);
+    void makeHeap();
 };

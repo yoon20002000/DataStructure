@@ -14,8 +14,8 @@ void DT_Quick::sort(int* inDatas, int left, int right)
 {
     if (left < right)
     {
-        //int pivot = partition(inDatas, left, right);
-        int pivot = partition2(inDatas, left, right);
+        int pivot = partition(inDatas, left, right);
+        //int pivot = partition2(inDatas, left, right);
         sort(inDatas, left, pivot - 1);
         sort(inDatas, pivot + 1, right);
     }
