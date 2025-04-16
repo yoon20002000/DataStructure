@@ -22,5 +22,6 @@ public:
 
     void heapifyUp(int index);
     void heapifyDown(int index);
+    void makeHeapify(int index);
     std::vector<int> heap;
 };

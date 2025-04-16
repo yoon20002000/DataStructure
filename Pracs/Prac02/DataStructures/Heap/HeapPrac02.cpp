@@ -119,3 +119,53 @@ void HeapPrac02::heapifyDown(int index)
         heapifyDown(largest);
     }
 }
+
+void HeapPrac02::makeHeapify(int index)
+{
+    // int l = left(index);
+    // int r = right(index);
+    // int largest = index;
+    //
+    // if (l < heap.size() && heap[l] > heap[largest])
+    // {
+    //     largest = l;    
+    // }
+    //
+    // if (r < heap.size() && heap[r] > heap[largest])
+    // {
+    //     largest = r;
+    // }
+    //
+    // if (largest != index)
+    // {
+    //     std::swap(heap[index], heap[largest]);
+    //     makeHeapify(largest);
+    // }
+
+    while (index < heap.size())
+    {
+        int l = left(index);
+        int r = right(index);
+        int largest = index;
+
+        if (l < heap.size() && heap[l] > heap[largest])
+        {
+            largest = l;
+        }
+
+        if (r < heap.size() && heap[r] > heap[largest])
+        {
+            largest = r;
+        }
+
+        if (largest != index)
+        {
+            std::swap(heap[index], heap[largest]);
+            index = largest;
+        }
+        else
+        {
+            break;
+        }
+    }
+}
