@@ -158,6 +158,7 @@
     <ClCompile Include="Heap\DT_Heap.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\BST\BSTPrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\BT\BTPrac02.cpp" />
+    <ClCompile Include="Pracs\Prac02\DataStructures\Heap\HeapPrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\Queue\QueuePrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="Heap\DT_Heap.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\BST\BSTPrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\BT\BTPrac02.h" />
+    <ClInclude Include="Pracs\Prac02\DataStructures\Heap\HeapPrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\Queue\QueuePrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.h" />
@@ -211,7 +213,6 @@
     <ClInclude Include="Tree\DT_OrderTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pracs\Prac02\DataStructures\Heap\" />
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac02\Sort\MergeSort\" />
     <Folder Include="Pracs\PracOri\DataStructures\BST\" />
