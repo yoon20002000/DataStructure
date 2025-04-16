@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+#include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/InsertionSort/DT_InsertionSort.h"
@@ -18,7 +19,7 @@
 
 void normalStack()
 {
-    DT_Stack stack(2);
+    StackPrac02 stack(2);
 
     while (true)
     {
@@ -44,7 +45,7 @@ void normalStack()
             }
         case 2:
             {
-                std::cout << "Peek : " << stack.peek() << std::endl;
+                std::cout << "Peek : " << stack.top() << std::endl;
                 break;
             }
         case 3:
@@ -209,7 +210,6 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_Quick quick;
-    quick.solve();
+    normalStack();
     return 0;
 }

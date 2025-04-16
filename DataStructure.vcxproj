@@ -156,6 +156,8 @@
   <ItemGroup>
     <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="Heap\DT_Heap.cpp" />
+    <ClCompile Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.cpp" />
+    <ClCompile Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.cpp" />
     <ClCompile Include="Queue\DT_CycleQueue.cpp" />
     <ClCompile Include="Queue\DT_LinearQueue.cpp" />
     <ClCompile Include="Queue\DT_SLLQueue.cpp" />
@@ -175,6 +177,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Heap\DT_Heap.h" />
+    <ClInclude Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.h" />
+    <ClInclude Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.h" />
     <ClInclude Include="Queue\DT_CycleQueue.h" />
     <ClInclude Include="Queue\DT_LinearQueue.h" />
     <ClInclude Include="Queue\DT_SLLQueue.h" />
@@ -191,6 +195,29 @@
     <ClInclude Include="Tree\DT_BinarySearchTree.h" />
     <ClInclude Include="Tree\DT_CalcFolderSize.h" />
     <ClInclude Include="Tree\DT_OrderTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pracs\Prac02\DataStructures\BST\" />
+    <Folder Include="Pracs\Prac02\DataStructures\BT\" />
+    <Folder Include="Pracs\Prac02\DataStructures\Heap\" />
+    <Folder Include="Pracs\Prac02\DataStructures\Queue\" />
+    <Folder Include="Pracs\Prac02\Sort\BubbleSort\" />
+    <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
+    <Folder Include="Pracs\Prac02\Sort\InsertSort\" />
+    <Folder Include="Pracs\Prac02\Sort\MergeSort\" />
+    <Folder Include="Pracs\Prac02\Sort\QuickSort\" />
+    <Folder Include="Pracs\Prac02\Sort\SelectionSort\" />
+    <Folder Include="Pracs\PracOri\DataStructures\BST\" />
+    <Folder Include="Pracs\PracOri\DataStructures\BT\" />
+    <Folder Include="Pracs\PracOri\DataStructures\Heap\" />
+    <Folder Include="Pracs\PracOri\DataStructures\Queue\" />
+    <Folder Include="Pracs\PracOri\DataStructures\Stack\" />
+    <Folder Include="Pracs\PracOri\Sort\BubbleSort\" />
+    <Folder Include="Pracs\PracOri\Sort\HeapSort\" />
+    <Folder Include="Pracs\PracOri\Sort\InsertSort\" />
+    <Folder Include="Pracs\PracOri\Sort\MergeSort\" />
+    <Folder Include="Pracs\PracOri\Sort\QuickSort\" />
+    <Folder Include="Pracs\PracOri\Sort\SelectionSort\" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
