@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="Heap\DT_Heap.cpp" />
+    <ClCompile Include="Pracs\Prac02\DataStructures\Queue\QueuePrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.cpp" />
     <ClCompile Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.cpp" />
     <ClCompile Include="Queue\DT_CycleQueue.cpp" />
@@ -177,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Heap\DT_Heap.h" />
+    <ClInclude Include="Pracs\Prac02\DataStructures\Queue\QueuePrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\Stack\SingleLinkedListStackPrac02.h" />
     <ClInclude Include="Pracs\Prac02\DataStructures\Stack\StackPrac02.h" />
     <ClInclude Include="Queue\DT_CycleQueue.h" />
@@ -200,7 +202,6 @@
     <Folder Include="Pracs\Prac02\DataStructures\BST\" />
     <Folder Include="Pracs\Prac02\DataStructures\BT\" />
     <Folder Include="Pracs\Prac02\DataStructures\Heap\" />
-    <Folder Include="Pracs\Prac02\DataStructures\Queue\" />
     <Folder Include="Pracs\Prac02\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac02\Sort\InsertSort\" />
