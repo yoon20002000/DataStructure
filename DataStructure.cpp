@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
+#include "Pracs/Prac02/Sort/QuickSort/QuickSortPrac02.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/InsertionSort/DT_InsertionSort.h"
@@ -210,7 +211,7 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_BinarySearchTree bst;
-    bst.solve();
+    DT_Quick sort;
+    sort.solve();
     return 0;
 }
