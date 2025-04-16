@@ -210,6 +210,7 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    normalStack();
+    DT_BinarySearchTree bst;
+    bst.solve();
     return 0;
 }

@@ -29,7 +29,8 @@ BTPrac02Node& BTPrac02Node::operator=(BTPrac02Node&& other) noexcept
 
     other.left = nullptr;
     other.right = nullptr;
-    other.data = '';
+    other.data = '\0';
+    return *this;
 }
 
 void BTPrac02::printPreorder(BTPrac02Node* root)
