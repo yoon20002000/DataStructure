@@ -21,7 +21,7 @@ int QuickSortPrac02::partitionHoare(int* arr, int left, int right)
     {
         while (arr[left] < pivot) {left++;}
 
-        while (arr[right] < pivot) {--right;}
+        while (arr[right] > pivot) {--right;}
 
         if (left >= right)
         {

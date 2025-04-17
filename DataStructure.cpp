@@ -211,7 +211,9 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    DT_Quick sort;
-    sort.solve();
+    QuickSortPrac02 sort;
+    int arr[8] {69,10,30,2,16,8,31,22};
+    sort.sort(arr,0,7);
+    sort.print(arr,8);
     return 0;
 }
