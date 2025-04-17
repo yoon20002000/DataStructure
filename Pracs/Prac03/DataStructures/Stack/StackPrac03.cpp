@@ -28,6 +28,7 @@ StackPrac03Node& StackPrac03Node::operator=(StackPrac03Node&& other) noexcept
 
     other.data = 0;
     other.prev = nullptr;
+    return *this;
 }
 
 StackPrac03::StackPrac03() : top(nullptr), size(0)
