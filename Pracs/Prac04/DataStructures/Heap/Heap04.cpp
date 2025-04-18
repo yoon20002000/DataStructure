@@ -101,17 +101,17 @@ void Heap04::heapifyDown(int index)
     while (true)
     {
         int largest = index;
-        int left = left(index);
-        int right = right(index);
+        int l = left(index);
+        int r = right(index);
         
-        if (left < heap.size() && heap[left] > heap[largest])
+        if (l < heap.size() && heap[l] > heap[largest])
         {
-            largest = left;
+            largest = l;
         }
 
-        if (right < heap.size() && heap[right] > heap[largest])
+        if (r < heap.size() && heap[r] > heap[largest])
         {
-            largest = right;
+            largest = r;
         }
 
         if (index!= largest)
