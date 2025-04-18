@@ -20,6 +20,7 @@ Heap03::Heap03(const Heap03& other)
 Heap03& Heap03::operator=(const Heap03& other)
 {
     heap = other.heap;
+    return *this;
 }
 
 Heap03::Heap03(Heap03&& other) noexcept
@@ -30,6 +31,8 @@ Heap03::Heap03(Heap03&& other) noexcept
 Heap03& Heap03::operator=(Heap03&& other) noexcept
 {
     heap = std::move(other.heap);
+
+    return *this;
 }
 
 int Heap03::parent(int index)
@@ -103,17 +106,17 @@ void Heap03::heapifyUp(int index)
 
 void Heap03::heapifyDown(int index)
 {
-    int left = left(index);
-    int right = right(index);
+    int l = left(index);
+    int r = right(index);
     int largest = index;
 
-    if (left < heap.size() && heap[left] > heap[largest])
+    if (l < heap.size() && heap[l] > heap[largest])
     {
-        largest = left;
+        largest = l;
     }
-    if (right < heap.size() && heap[right] > heap[largest])
+    if (r < heap.size() && heap[r] > heap[largest])
     {
-        largest = right;
+        largest = r;
     }
     if (largest != index)
     {
@@ -126,17 +129,17 @@ void Heap03::heapifyDownWhile(int index)
 {
     while (true)
     {
-        int left = left(index);
-        int right = right(index);
+        int l = left(index);
+        int r = right(index);
         int largest = index;
 
-        if (left < heap.size() && heap[left] > heap[index])
+        if (l < heap.size() && heap[l] > heap[index])
         {
-            largest = left;
+            largest = l;
         }
-        if (right < heap.size() && heap[right] > heap[largest])
+        if (r < heap.size() && heap[r] > heap[largest])
         {
-            largest = right;
+            largest = r;
         }
 
         if (largest == index)
