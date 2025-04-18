@@ -179,8 +179,10 @@
     <ClCompile Include="Pracs\Prac03\Sort\SelectionSort\SelectionSort03.cpp" />
     <ClCompile Include="Pracs\Prac04\DataStructures\BST\BST04.cpp" />
     <ClCompile Include="Pracs\Prac04\DataStructures\BT\BT04.cpp" />
+    <ClCompile Include="Pracs\Prac04\DataStructures\Heap\Heap04.cpp" />
     <ClCompile Include="Pracs\Prac04\DataStructures\Queue\Queue04.cpp" />
     <ClCompile Include="Pracs\Prac04\DataStructures\Stack\Stack04.cpp" />
+    <ClCompile Include="Pracs\Prac04\Sort\BubbleSort\BubbleSort04.cpp" />
     <ClCompile Include="Queue\DT_CycleQueue.cpp" />
     <ClCompile Include="Queue\DT_LinearQueue.cpp" />
     <ClCompile Include="Queue\DT_SLLQueue.cpp" />
@@ -223,8 +225,10 @@
     <ClInclude Include="Pracs\Prac03\Sort\SelectionSort\SelectionSort03.h" />
     <ClInclude Include="Pracs\Prac04\DataStructures\BST\BST04.h" />
     <ClInclude Include="Pracs\Prac04\DataStructures\BT\BT04.h" />
+    <ClInclude Include="Pracs\Prac04\DataStructures\Heap\Heap04.h" />
     <ClInclude Include="Pracs\Prac04\DataStructures\Queue\Queue04.h" />
     <ClInclude Include="Pracs\Prac04\DataStructures\Stack\Stack04.h" />
+    <ClInclude Include="Pracs\Prac04\Sort\BubbleSort\BubbleSort04.h" />
     <ClInclude Include="Queue\DT_CycleQueue.h" />
     <ClInclude Include="Queue\DT_LinearQueue.h" />
     <ClInclude Include="Queue\DT_SLLQueue.h" />
@@ -245,8 +249,6 @@
   <ItemGroup>
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
-    <Folder Include="Pracs\Prac04\DataStructures\Heap\" />
-    <Folder Include="Pracs\Prac04\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\InsertSort\" />
     <Folder Include="Pracs\Prac04\Sort\MergeSort\" />
