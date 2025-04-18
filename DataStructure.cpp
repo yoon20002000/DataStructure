@@ -3,6 +3,7 @@
 
 #include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
 #include "Pracs/Prac02/Sort/QuickSort/QuickSortPrac02.h"
+#include "Pracs/Prac04/Sort/QuickSort/QuickSort04.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/InsertionSort/DT_InsertionSort.h"
@@ -211,7 +212,7 @@ void cycleQueue()
 
 int main(int argc, char* argv[])
 {
-    QuickSortPrac02 sort;
+    QuickSort04 sort;
     int arr[8] {69,10,30,2,16,8,31,22};
     sort.sort(arr,0,7);
     sort.print(arr,8);
