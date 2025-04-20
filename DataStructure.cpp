@@ -4,6 +4,7 @@
 #include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
 #include "Pracs/Prac02/Sort/QuickSort/QuickSortPrac02.h"
 #include "Pracs/Prac04/Sort/QuickSort/QuickSort04.h"
+#include "Pracs/Prac05/Sort/QuickSort/QuickSort05.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Sort/BubleSort/DT_BubbleSort.h"
 #include "Sort/InsertionSort/DT_InsertionSort.h"
@@ -210,11 +211,20 @@ void cycleQueue()
     cycleQueue.printQueue();
 }
 
+void print(int* arr, int size)
+{
+    for (int i = 0; i < size; ++i)
+    {
+        std::cout << arr[i] << ' ';
+    }
+    std::cout << std::endl;
+}
+
 int main(int argc, char* argv[])
 {
-    QuickSort04 sort;
+    QuickSort05 sort;
     int arr[8] {69,10,30,2,16,8,31,22};
-    sort.sort(arr,0,7);
-    sort.print(arr,8);
+    sort.quickSort(arr, 0,7);
+    print(arr, 8);
     return 0;
 }
