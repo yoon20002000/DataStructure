@@ -219,12 +219,28 @@ void print(int* arr, int size)
     }
     std::cout << std::endl;
 }
+class Base {
+public:
+    int a;
+};
+
+class Derived : virtual public Base {
+public:
+    int b;
+};
+
+
 
 int main(int argc, char* argv[])
 {
-    QuickSort05 sort;
-    int arr[8] {69,10,30,2,16,8,31,22};
-    sort.quickSort(arr, 0,7);
-    print(arr, 8);
+    Derived d;
+    Derived* pd = &d;
+    Base* pb = &d;
+    d.a = 01;
+    d.b= INT_MAX;
+
+    std::cout << pd << std::endl;
+    std::cout << pb << std::endl;
+    
     return 0;
 }
