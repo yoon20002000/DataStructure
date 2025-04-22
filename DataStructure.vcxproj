@@ -313,6 +313,7 @@
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
     <Folder Include="Pracs\PracOri\DataStructures\BST\" />
+    <Folder Include="Pracs\PracOri\DataStructures\HashTable\" />
     <Folder Include="Pracs\PracOri\DataStructures\Heap\" />
     <Folder Include="Pracs\PracOri\DataStructures\Queue\" />
     <Folder Include="Pracs\PracOri\DataStructures\Stack\" />
