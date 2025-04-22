@@ -12,6 +12,66 @@ Queue07::~Queue07()
     delete [] data;
 }
 
+Queue07::Queue07(const Queue07& other)
+{
+    capacity = other.capacity;
+    data = new int[capacity];
+    for (int i = 0 ; i < capacity ; i++)
+    {
+        data[i] = other.data[i];
+    }
+    front = other.front;
+    rear = other.rear;
+}
+
+Queue07& Queue07::operator=(const Queue07& other)
+{
+    if (&other != this)
+    {
+        delete [] data;
+        capacity = other.capacity;
+        data = new int[capacity];
+        for (int i = 0 ; i < capacity ; i++)
+        {
+            data[i] = other.data[i];
+        }
+        front = other.front;
+        rear = other.rear;
+    }
+    return *this;
+}
+
+Queue07::Queue07(Queue07&& other) noexcept
+{
+    data = other.data;
+    capacity = other.capacity;
+    front = other.front;
+    rear = other.rear;
+
+    other.data = nullptr;
+    other.capacity = 0;
+    other.front = 0;
+    other.rear = 0;
+}
+
+Queue07& Queue07::operator=(Queue07&& other) noexcept
+{
+    if (&other != this)
+    {
+        delete [] data;
+        data = other.data;
+        capacity = other.capacity;
+        front = other.front;
+        rear = other.rear;
+
+        other.data = nullptr;
+        other.capacity = 0;
+        other.front = 0;
+        other.rear = 0;
+    }
+    return *this;
+}
+
 void Queue07::enqueue(int value)
 {
     if (isFull())

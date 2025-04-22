@@ -38,7 +38,7 @@ Stack07& Stack07::operator=(const Stack07& other)
     return *this;
 }
 
-Stack07::Stack07(Stack07&& other) : stack(nullptr), capacity(0), size(0)
+Stack07::Stack07(Stack07&& other) noexcept : stack(nullptr), capacity(0), size(0)
 {
     stack = other.stack;
     capacity = other.capacity;
@@ -49,7 +49,7 @@ Stack07::Stack07(Stack07&& other) : stack(nullptr), capacity(0), size(0)
     other.capacity = 0;
 }
 
-Stack07& Stack07::operator=(Stack07&& other)
+Stack07& Stack07::operator=(Stack07&& other) noexcept
 {
     if (&other != this)
     {
