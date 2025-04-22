@@ -2,23 +2,13 @@
 #include <vector>
 
 #include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
-#include "Pracs/Prac02/Sort/QuickSort/QuickSortPrac02.h"
-#include "Pracs/Prac04/Sort/QuickSort/QuickSort04.h"
-#include "Pracs/Prac05/Sort/QuickSort/QuickSort05.h"
+#include "Pracs/Prac07/Sort/QuickSort/QuickSort07.h"
 #include "Queue/DT_CycleQueue.h"
-#include "Sort/BubleSort/DT_BubbleSort.h"
-#include "Sort/InsertionSort/DT_InsertionSort.h"
-#include "Sort/MergeSort/DT_MergeSort.h"
-#include "Sort/QuickSort/DT_Quick.h"
-#include "Sort/SelectSort/DT_SelectSort.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
 #include "Stack/DTA_CalcPostfix.h"
 #include "Stack/DT_LLStack.h"
-#include "Stack/DT_Stack.h"
-#include "Tree/DT_BinarySearchTree.h"
 #include "Tree/DT_CalcFolderSize.h"
-#include "Tree/DT_OrderTree.h"
 
 void normalStack()
 {
@@ -233,14 +223,18 @@ public:
 
 int main(int argc, char* argv[])
 {
-    Derived d;
-    Derived* pd = &d;
-    Base* pb = &d;
-    d.a = 01;
-    d.b= INT_MAX;
+    // Derived d;
+    // Derived* pd = &d;
+    // Base* pb = &d;
+    // d.a = 01;
+    // d.b= INT_MAX;
+    //
+    // std::cout << pd << std::endl;
+    // std::cout << pb << std::endl;
 
-    std::cout << pd << std::endl;
-    std::cout << pb << std::endl;
+    int arr[8] = {69,10,30,2,16,8,31,22};
+    QuickSort07::quickSort(arr,0,7);
+    print(arr,8);
     
     return 0;
 }
