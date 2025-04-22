@@ -27,7 +27,7 @@ BST07::BST07() : root(nullptr)
 
 BST07::~BST07()
 {
-    root = deleteTree(root);
+    deleteTree(root);
 }
 
 void BST07::insert(int data)
