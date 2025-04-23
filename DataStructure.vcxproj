@@ -214,6 +214,7 @@
     <ClCompile Include="Pracs\Prac07\Sort\MergeSort\MergeSort07.cpp" />
     <ClCompile Include="Pracs\Prac07\Sort\QuickSort\QuickSort07.cpp" />
     <ClCompile Include="Pracs\Prac07\Sort\SelectionSort\SelectionSort.cpp" />
+    <ClCompile Include="Pracs\Prac08\DataStructures\BST\BST08.cpp" />
     <ClCompile Include="Pracs\Prac08\DataStructures\Heap\Heap08.cpp" />
     <ClCompile Include="Pracs\Prac08\DataStructures\Queue\Queue08.cpp" />
     <ClCompile Include="Pracs\Prac08\DataStructures\Stack\Stack08.cpp" />
@@ -294,6 +295,7 @@
     <ClInclude Include="Pracs\Prac07\Sort\MergeSort\MergeSort07.h" />
     <ClInclude Include="Pracs\Prac07\Sort\QuickSort\QuickSort07.h" />
     <ClInclude Include="Pracs\Prac07\Sort\SelectionSort\SelectionSort.h" />
+    <ClInclude Include="Pracs\Prac08\DataStructures\BST\BST08.h" />
     <ClInclude Include="Pracs\Prac08\DataStructures\Heap\Heap08.h" />
     <ClInclude Include="Pracs\Prac08\DataStructures\Queue\Queue08.h" />
     <ClInclude Include="Pracs\Prac08\DataStructures\Stack\Stack08.h" />
@@ -318,7 +320,6 @@
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
-    <Folder Include="Pracs\Prac08\DataStructures\BST\" />
     <Folder Include="Pracs\Prac08\DataStructures\HashTable\" />
     <Folder Include="Pracs\Prac08\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac08\Sort\InsertSort\" />
