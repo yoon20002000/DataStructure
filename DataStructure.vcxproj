@@ -320,7 +320,6 @@
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
-    <Folder Include="Pracs\Prac08\DataStructures\HashTable\" />
     <Folder Include="Pracs\Prac08\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac08\Sort\InsertSort\" />
     <Folder Include="Pracs\Prac08\Sort\MergeSort\" />
