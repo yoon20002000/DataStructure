@@ -1,6 +1,14 @@
 ﻿#include "MergeSort09.h"
 
-#include <vector>
+void MergeSort09::sort(int* arr, size_t size)
+{
+    if (arr == nullptr || size < 2)
+    {
+        return;
+    }
+    tempBuffer.resize(size);
+    mergeSort(arr, 0, size - 1);
+}
 
 void MergeSort09::mergeSort(int* arr, size_t left, size_t right)
 {
@@ -15,39 +23,34 @@ void MergeSort09::mergeSort(int* arr, size_t left, size_t right)
 
 void MergeSort09::merge(int* arr, size_t left, size_t mid, size_t right)
 {
-    size_t lSize = mid - left + 1;
-    size_t rSize = right - mid;
+    size_t leftIdx = left;
+    size_t midIdx = mid + 1;
+    size_t buffIdx = left;
 
-    std::vector<int> l(lSize), r(rSize);
-    for (size_t i = 0; i < lSize; i++)
+    // 임시 버퍼에 복사
+    while (leftIdx <= mid && midIdx <= right)
     {
-        l[i] = arr[left + i];
-    }
-    for (size_t i = 0; i < rSize; i++)
-    {
-        r[i] = arr[mid + 1+ i];
-    }
-
-    size_t lIndex = 0, rIndex = 0;
-    size_t newIndex = left;
-    while (lIndex < lSize && rIndex < rSize)
-    {
-        if (l[lIndex] <= r[rIndex])
+        if (arr[leftIdx] <= arr[midIdx])
         {
-            arr[newIndex++] = l[lIndex++];
+            tempBuffer[buffIdx++] = arr[leftIdx++];
         }
         else
         {
-            arr[newIndex++] = r[rIndex++];
+            tempBuffer[buffIdx++] = arr[midIdx++];
         }
     }
-
-    while (lIndex < lSize)
+    // 남아 있는 내용들 복사
+    while (leftIdx <= mid)
     {
-        arr[newIndex++] = l[lIndex++];
+        tempBuffer[buffIdx++] = arr[leftIdx++];
     }
-    while (rIndex < rSize)
+    while (midIdx <= right)
     {
-        arr[newIndex++] = r[rIndex++];
+        tempBuffer[buffIdx++] = arr[midIdx++];
+    }
+
+    for (size_t i = left; i <= right; ++i)
+    {
+        arr[i] = tempBuffer[i];
     }
 }
