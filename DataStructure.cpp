@@ -3,6 +3,7 @@
 
 #include "Pracs/Prac02/DataStructures/Stack/StackPrac02.h"
 #include "Pracs/Prac07/Sort/QuickSort/QuickSort07.h"
+#include "Pracs/Prac09/Sort/QuickSort/Quick09.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
@@ -232,9 +233,40 @@ int main(int argc, char* argv[])
     // std::cout << pd << std::endl;
     // std::cout << pb << std::endl;
 
+    // 1. 일반적인 무작위 배열
+    int arr1[] = { 5, 3, 8, 4, 2, 7, 1, 10, 6, 9 };
+
+    // 2. 이미 정렬된 배열 (오름차순)
+    int arr2[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    // 3. 내림차순 배열
+    int arr3[] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+    // 4. 거의 정렬된 배열 (1~2개만 바뀐 상태)
+    int arr4[] = { 1, 2, 3, 5, 4, 6, 7, 8, 9, 10 };
+
+    // 5. 중복이 많은 배열
+    int arr5[] = { 5, 1, 3, 3, 3, 2, 4, 4, 5, 1 };
+
+    // 6. 모두 동일한 값
+    int arr6[] = { 7, 7, 7, 7, 7, 7, 7 };
     int arr[8] = {69,10,30,2,16,8,31,22};
-    QuickSort07::quickSort(arr,0,7);
-    print(arr,8);
+    
+    Quick09::sort(arr1, 10);
+    print(arr1, 10);
+    // std::cout << std::size(arr1);
+    // Quick09::sort(arr1, std::size(arr1));
+    // print(arr1,std::size(arr1));
+    // Quick09::sort(arr2, std::size(arr2));
+    // print(arr2,std::size(arr2));
+    // Quick09::sort(arr3, std::size(arr3));
+    // print(arr3,std::size(arr3));
+    // Quick09::sort(arr4, std::size(arr4));
+    // print(arr4,std::size(arr4));
+    // Quick09::sort(arr5, std::size(arr5));
+    // print(arr5,std::size(arr5));
+    // Quick09::sort(arr6, std::size(arr6));
+    // print(arr6,std::size(arr6));
     
     return 0;
 }
