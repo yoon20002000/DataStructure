@@ -109,6 +109,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -224,6 +225,7 @@
     <ClCompile Include="Pracs\Prac08\Sort\QuickSort\Quick08.cpp" />
     <ClCompile Include="Pracs\Prac08\Sort\SelectionSort\Selection08.cpp" />
     <ClCompile Include="Pracs\Prac09\DataStructures\BST\BST09.cpp" />
+    <ClCompile Include="Pracs\Prac09\DataStructures\HashTable\HashTable09.cpp" />
     <ClCompile Include="Pracs\Prac09\DataStructures\Heap\Heap09.cpp" />
     <ClCompile Include="Pracs\Prac09\DataStructures\Queue\Queue09.cpp" />
     <ClCompile Include="Pracs\Prac09\DataStructures\Stack\Stack09.cpp" />
@@ -314,6 +316,7 @@
     <ClInclude Include="Pracs\Prac08\Sort\QuickSort\Quick08.h" />
     <ClInclude Include="Pracs\Prac08\Sort\SelectionSort\Selection08.h" />
     <ClInclude Include="Pracs\Prac09\DataStructures\BST\BST09.h" />
+    <ClInclude Include="Pracs\Prac09\DataStructures\HashTable\HashTable09.h" />
     <ClInclude Include="Pracs\Prac09\DataStructures\Heap\Heap09.h" />
     <ClInclude Include="Pracs\Prac09\DataStructures\Queue\Queue09.h" />
     <ClInclude Include="Pracs\Prac09\DataStructures\Stack\Stack09.h" />
@@ -338,7 +341,6 @@
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
-    <Folder Include="Pracs\Prac09\DataStructures\HashTable\" />
     <Folder Include="Pracs\Prac09\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac09\Sort\InsertSort\" />
     <Folder Include="Pracs\Prac09\Sort\MergeSort\" />
