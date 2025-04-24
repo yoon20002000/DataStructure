@@ -31,7 +31,8 @@ public:
 
     void heapifyUp(int index);
     void heapifyDown(int index);
-    
+
+    void buildHeap();
 private:
     std::vector<int> heap;
 };

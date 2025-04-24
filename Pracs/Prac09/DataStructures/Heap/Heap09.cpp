@@ -94,3 +94,11 @@ void Heap09::heapifyDown(int index)
         }
     }
 }
+
+void Heap09::buildHeap()
+{
+    for (int i = parent(heap.size() - 1); i >= 0; i--)
+    {
+        heapifyDown(i);
+    }
+}
