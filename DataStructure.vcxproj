@@ -254,6 +254,7 @@
     <ClCompile Include="Pracs\Prac11\Sort\MergeSort\Merge11.cpp" />
     <ClCompile Include="Pracs\Prac11\Sort\QuickSort\Quick11.cpp" />
     <ClCompile Include="Pracs\Prac11\Sort\SelectionSort\Selection11.cpp" />
+    <ClCompile Include="Pracs\Prac12\DataStructures\Queue\Queue12.cpp" />
     <ClCompile Include="Queue\DT_CycleQueue.cpp" />
     <ClCompile Include="Queue\DT_LinearQueue.cpp" />
     <ClCompile Include="Queue\DT_SLLQueue.cpp" />
@@ -262,6 +263,7 @@
     <ClCompile Include="Sort\MergeSort\DT_MergeSort.cpp" />
     <ClCompile Include="Sort\QuickSort\DT_Quick.cpp" />
     <ClCompile Include="Sort\SelectSort\DT_SelectSort.cpp" />
+    <ClCompile Include="Pracs\Prac12\DataStructures\Stack\Stack12.cpp" />
     <ClCompile Include="Stack\DTA_ChangePostfix.cpp" />
     <ClCompile Include="Stack\DTA_CheckSymbolPair.cpp" />
     <ClCompile Include="Stack\DTA_CalcPostfix.cpp" />
@@ -370,6 +372,7 @@
     <ClInclude Include="Pracs\Prac11\Sort\MergeSort\Merge11.h" />
     <ClInclude Include="Pracs\Prac11\Sort\QuickSort\Quick11.h" />
     <ClInclude Include="Pracs\Prac11\Sort\SelectionSort\Selection11.h" />
+    <ClInclude Include="Pracs\Prac12\DataStructures\Queue\Queue12.h" />
     <ClInclude Include="Queue\DT_CycleQueue.h" />
     <ClInclude Include="Queue\DT_LinearQueue.h" />
     <ClInclude Include="Queue\DT_SLLQueue.h" />
@@ -378,6 +381,7 @@
     <ClInclude Include="Sort\MergeSort\DT_MergeSort.h" />
     <ClInclude Include="Sort\QuickSort\DT_Quick.h" />
     <ClInclude Include="Sort\SelectSort\DT_SelectSort.h" />
+    <ClInclude Include="Pracs\Prac12\DataStructures\Stack\Stack12.h" />
     <ClInclude Include="Stack\DTA_ChangePostfix.h" />
     <ClInclude Include="Stack\DTA_CheckSymbolPair.h" />
     <ClInclude Include="Stack\DTA_CalcPostfix.h" />
