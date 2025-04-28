@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Pracs\Prac12\Sort\MergeSort\Merge12.cpp" />
     <ClCompile Include="Pracs\Prac12\Sort\InsertSort\Insertion12.cpp" />
     <ClCompile Include="Pracs\Prac12\Sort\BubbleSort\Bubble12.cpp" />
     <ClCompile Include="Pracs\Prac12\DataStructures\HashTable\HashTable12.cpp" />
@@ -280,6 +281,7 @@
     <ClCompile Include="Tree\DT_OrderTree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Pracs\Prac12\Sort\MergeSort\Merge12.h" />
     <ClInclude Include="Pracs\Prac12\Sort\InsertSort\Insertion12.h" />
     <ClInclude Include="Pracs\Prac12\Sort\BubbleSort\Bubble12.h" />
     <ClInclude Include="Pracs\Prac12\DataStructures\HashTable\HashTable12.h" />

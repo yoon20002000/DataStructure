@@ -384,6 +384,9 @@
     <ClCompile Include="Pracs\Prac12\Sort\SelectionSort\Selection12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pracs\Prac12\Sort\MergeSort\Merge12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Heap\DT_Heap.h">
@@ -750,6 +753,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Pracs\Prac12\Sort\SelectionSort\Selection12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pracs\Prac12\Sort\MergeSort\Merge12.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
