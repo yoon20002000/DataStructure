@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Pracs\Prac12\DataStructures\HashTable\HashTable12.cpp" />
     <ClCompile Include="Pracs\Prac12\DataStructures\BST\BST12.cpp" />
     <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="Pracs\Prac12\DataStructures\Heap\Heap12.cpp" />
@@ -276,6 +277,7 @@
     <ClCompile Include="Tree\DT_OrderTree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Pracs\Prac12\DataStructures\HashTable\HashTable12.h" />
     <ClInclude Include="Pracs\Prac12\DataStructures\BST\BST12.h" />
     <ClInclude Include="Pracs\Prac12\DataStructures\Heap\Heap12.h" />
     <ClInclude Include="Heap\DT_Heap.h" />
