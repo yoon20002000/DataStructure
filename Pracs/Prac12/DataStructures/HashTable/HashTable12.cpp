@@ -45,7 +45,7 @@ std::optional<valueType> HashTable12::get(const std::string& key) const
 		if (el.first == key)
 		{
 			
-			return el;
+			return std::optional<valueType>(el);
 		}
 	}
 	return std::nullopt;
