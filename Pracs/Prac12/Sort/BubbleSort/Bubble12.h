@@ -1,4 +1,6 @@
 ﻿#pragma once
+#include <span>
+
 class Bubble12
 {
 public:
