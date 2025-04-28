@@ -34,6 +34,11 @@
 *.idb
 *.tlog
 *.ilk
+*.vsidx
+*.ipch
+*.idb
+*.pdb
+
 DataStructure/x64/Debug/DataStructure.ilk
 DataStructure/x64/Debug/DataStructure.tlog/CL.command.1.tlog
 DataStructure/x64/Debug/DataStructure.tlog/Cl.items.tlog

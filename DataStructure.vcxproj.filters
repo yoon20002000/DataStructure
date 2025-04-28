@@ -366,6 +366,12 @@
     <ClCompile Include="Pracs\Prac12\DataStructures\Queue\Queue12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pracs\Prac12\DataStructures\Heap\Heap12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pracs\Prac12\DataStructures\BST\BST12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Heap\DT_Heap.h">
@@ -714,6 +720,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Pracs\Prac12\DataStructures\Queue\Queue12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pracs\Prac12\DataStructures\Heap\Heap12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pracs\Prac12\DataStructures\BST\BST12.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
