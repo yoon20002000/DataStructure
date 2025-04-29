@@ -5,6 +5,7 @@
 #include "Pracs/Prac07/Sort/QuickSort/QuickSort07.h"
 #include "Pracs/Prac09/Sort/QuickSort/Quick09.h"
 #include "Pracs/Prac10/DataStructures/Queue/Queue10.h"
+#include "Pracs/Prac13/Sort/QuickSort/QuickSort13.h"
 #include "Queue/DT_CycleQueue.h"
 #include "Stack/DTA_ChangePostfix.h"
 #include "Stack/DTA_CheckSymbolPair.h"
@@ -253,60 +254,21 @@ void sortExam()
     // 6. 모두 동일한 값
     int arr6[] = { 7, 7, 7, 7, 7, 7, 7 };
     int arr[8] = {69,10,30,2,16,8,31,22};
+
+    QuickSort13 sort;
+    sort.sortMOT(arr1);
+
+    print(arr1, 10);
+    
+    sort.sortMOT(arr2);
+    print(arr2, 10);
+    sort.sortMOT(arr);
+    print(arr, 8);
 }
 
 int main(int argc, char* argv[])
 {
-    Queue10 queue;
-    while (true)
-    {
-        std::cout << " 0 : push, 1 : pop, 2 : peek, 3 : printStack" << std::endl;
-
-        int choice;
-        std::cin >> choice;
-
-        switch (choice)
-        {
-        case 0:
-            {
-                std::cout << "Input int data : ";
-                int val;
-                std::cin >> val;
-                queue.enqueue(val);
-                break;
-            }
-        case 1:
-            {
-                auto v = queue.dequeue();
-                if (v.has_value())
-                {
-                    std::cout << "Pop : " << v.value() << std::endl;    
-                }
-                break;
-            }
-        case 2:
-            {
-                auto v = queue.dequeue();
-                if (v.has_value())
-                {
-                    std::cout << "Peek : " << v.value() << std::endl;    
-                }
-                break;
-            }
-        case 3:
-            {
-                
-                break;
-            }
-        default:
-            {
-                std::cout << "Error retry";
-                break;
-            }
-        }
-    }
-
-   
+    sortExam();
     
     
     
