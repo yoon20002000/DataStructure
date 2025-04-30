@@ -271,6 +271,8 @@
     <ClCompile Include="Pracs\Prac13\Sort\MergeSort\Merge13.cpp" />
     <ClCompile Include="Pracs\Prac13\Sort\QuickSort\QuickSort13.cpp" />
     <ClCompile Include="Pracs\Prac13\Sort\SelectionSort\Selection13.cpp" />
+    <ClCompile Include="Pracs\Prac14\DataStructures\BST\BST14.cpp" />
+    <ClCompile Include="Pracs\Prac14\DataStructures\Heap\Heap14.cpp" />
     <ClCompile Include="Pracs\Prac14\DataStructures\Queue\Queue14.cpp" />
     <ClCompile Include="Pracs\Prac14\DataStructures\Stack\Stack14.cpp" />
     <ClCompile Include="Queue\DT_CycleQueue.cpp" />
@@ -409,6 +411,8 @@
     <ClInclude Include="Pracs\Prac13\Sort\MergeSort\Merge13.h" />
     <ClInclude Include="Pracs\Prac13\Sort\QuickSort\QuickSort13.h" />
     <ClInclude Include="Pracs\Prac13\Sort\SelectionSort\Selection13.h" />
+    <ClInclude Include="Pracs\Prac14\DataStructures\BST\BST14.h" />
+    <ClInclude Include="Pracs\Prac14\DataStructures\Heap\Heap14.h" />
     <ClInclude Include="Pracs\Prac14\DataStructures\Queue\Queue14.h" />
     <ClInclude Include="Pracs\Prac14\DataStructures\Stack\Stack14.h" />
     <ClInclude Include="Queue\DT_CycleQueue.h" />
@@ -435,9 +439,7 @@
     <Folder Include="Pracs\Prac02\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac03\Sort\HeapSort\" />
     <Folder Include="Pracs\Prac04\Sort\HeapSort\" />
-    <Folder Include="Pracs\Prac14\DataStructures\BST\" />
     <Folder Include="Pracs\Prac14\DataStructures\HashTable\" />
-    <Folder Include="Pracs\Prac14\DataStructures\Heap\" />
     <Folder Include="Pracs\Prac14\Sort\BubbleSort\" />
     <Folder Include="Pracs\Prac14\Sort\InsertSort\" />
     <Folder Include="Pracs\Prac14\Sort\MergeSort\" />
