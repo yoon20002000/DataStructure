@@ -268,8 +268,6 @@ void sortExam()
 
 int main(int argc, char* argv[])
 {
-    sortExam();
-    
     
     
     return 0;
