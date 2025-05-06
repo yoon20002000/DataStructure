@@ -8,7 +8,7 @@ HashTable13::HashTable13() : table(MAX_SIZE)
 void HashTable13::insert(const std::string& key, int value)
 {
     int index = hash(key);
-    for (valueType& element : table[index])
+    for (pairType& element : table[index])
     {
         if (element.first == key)
         {
@@ -33,10 +33,10 @@ bool HashTable13::remove(const std::string& key)
     return false;
 }
 
-std::optional<valueType> HashTable13::find(const std::string& key) const
+std::optional<pairType> HashTable13::find(const std::string& key) const
 {
     int index = hash(key);
-    for (const valueType& element : table[index])
+    for (const pairType& element : table[index])
     {
         if (element.first == key)
         {

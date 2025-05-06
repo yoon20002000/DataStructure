@@ -36,7 +36,7 @@ void HashTable12::deleteValue(const std::string& key)
 	//}
 }
 
-std::optional<valueType> HashTable12::get(const std::string& key) const
+std::optional<pairType> HashTable12::get(const std::string& key) const
 {
 	int index = hash(key);
 
@@ -45,7 +45,7 @@ std::optional<valueType> HashTable12::get(const std::string& key) const
 		if (el.first == key)
 		{
 			
-			return std::optional<valueType>(el);
+			return std::optional<pairType>(el);
 		}
 	}
 	return std::nullopt;

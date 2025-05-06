@@ -3,7 +3,7 @@
 #include <list>
 #include <string>
 #include <optional>
-using valueType = std::pair<std::string, int>;
+using pairType = std::pair<std::string, int>;
 
 class HashTable12
 {
@@ -11,7 +11,7 @@ public:
 	HashTable12();
 	void insert(const std::string& key, int value);
 	void deleteValue(const std::string& key);
-	std::optional<valueType> get(const std::string& key) const;
+	std::optional<pairType> get(const std::string& key) const;
 
 private:
 	int hash(const std::string& key) const
@@ -25,6 +25,6 @@ private:
 	}
 private:
 	static const int MAX_CAPACITY = 10;
-	std::vector<std::list<valueType>> table;
+	std::vector<std::list<pairType>> table;
 };
 
