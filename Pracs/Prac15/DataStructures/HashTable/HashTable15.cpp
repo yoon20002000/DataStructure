@@ -4,7 +4,16 @@ HashTable15::HashTable15() : table(MAX_CAPACITY)
 {
     
 }
+void temp()
+{
+    int* bestPieces1[10];
+    int** bestPieces = bestPieces1;
 
+    for (int i = 0; i < 10; ++i)
+    {
+        bestPieces[i] = new int(i);
+    }
+}
 HashTable15::HashTable15(const HashTable15& other) : table(other.table)
 {
 }
